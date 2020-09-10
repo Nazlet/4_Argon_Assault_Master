@@ -176,10 +176,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xSpeed: 40
-  xRange: 17
+  xRange: 19
   ySpeed: 40
   yRangeMin: -10
   yRangeMax: 11
+  postionPitchFactor: 1.5
+  controlPitchFactor: -20
+  positionYawFactor: -1
+  controlRollFactor: -25
 --- !u!1 &466609481
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.2, y: 193, z: 18.1}
+  m_LocalPosition: {x: 25.101522, y: 181.05139, z: 22.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 258027918}
@@ -774,12 +778,12 @@ PrefabInstance:
     - target: {fileID: 7296705959612970558, guid: a57de0a145b4f4fa6b6aaa6f152d822a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.61
+      value: -1.6100006
       objectReference: {fileID: 0}
     - target: {fileID: 7296705959612970558, guid: a57de0a145b4f4fa6b6aaa6f152d822a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.4
+      value: 28.5
       objectReference: {fileID: 0}
     - target: {fileID: 7296705959612970558, guid: a57de0a145b4f4fa6b6aaa6f152d822a,
         type: 3}
