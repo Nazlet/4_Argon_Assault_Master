@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
+  scorePerHit: 12
 --- !u!1 &212868211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -305,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
+  scorePerHit: 100
 --- !u!1001 &369547107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,6 +730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
+  scorePerHit: 12
 --- !u!4 &1152900970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -780,8 +783,9 @@ GameObject:
   - component: {fileID: 1227454695}
   - component: {fileID: 1227454697}
   - component: {fileID: 1227454696}
+  - component: {fileID: 1227454698}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScoreBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,6 +853,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227454694}
   m_CullTransparentMesh: 0
+--- !u!114 &1227454698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227454694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69907e2d9e1848819867e45bbb87d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1231380674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1073,6 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
+  scorePerHit: 12
 --- !u!1001 &1608996568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1204,6 +1221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
+  scorePerHit: 100
 --- !u!1001 &1790586919
 PrefabInstance:
   m_ObjectHideFlags: 0
