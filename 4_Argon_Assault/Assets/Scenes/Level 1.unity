@@ -563,6 +563,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667776402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2877173254917957625, guid: 3e987bf1aec63412aa3947c5fda053aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2877173253486957724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &704962278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746,
@@ -1372,6 +1378,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 608301028823235883, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
+--- !u!1 &2015709735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8696873042663857454, guid: 3e987bf1aec63412aa3947c5fda053aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2877173253486957724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2044589412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShip1
       objectReference: {fileID: 0}
+    - target: {fileID: 234927638622033044, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 240557995621919852, guid: 3e987bf1aec63412aa3947c5fda053aa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1745,10 +1762,45 @@ PrefabInstance:
       propertyPath: InitialModule.startSpeed.scalar
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 2877173254917957625, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877173254917957625, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355989327592647618, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355989327592647618, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 667776402}
+    - target: {fileID: 7355989327592647618, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 2015709735}
     - target: {fileID: 8696873042663857443, guid: 3e987bf1aec63412aa3947c5fda053aa,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696873042663857454, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696873042663857454, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e987bf1aec63412aa3947c5fda053aa, type: 3}
