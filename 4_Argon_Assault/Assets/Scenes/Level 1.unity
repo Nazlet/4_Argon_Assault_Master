@@ -286,6 +286,7 @@ MonoBehaviour:
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
   scorePerHit: 12
+  hits: 10
 --- !u!1 &212868211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -307,6 +308,7 @@ MonoBehaviour:
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
   scorePerHit: 100
+  hits: 10
 --- !u!1001 &369547107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -737,6 +739,7 @@ MonoBehaviour:
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
   scorePerHit: 12
+  hits: 10
 --- !u!4 &1152900970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -1096,6 +1099,7 @@ MonoBehaviour:
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
   scorePerHit: 12
+  hits: 10
 --- !u!1001 &1608996568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1228,6 +1232,7 @@ MonoBehaviour:
   deathFX: {fileID: 4335061273351716885, guid: 22139da07e56541e29315ecd3a9c7531, type: 3}
   parent: {fileID: 97999545}
   scorePerHit: 100
+  hits: 10
 --- !u!1001 &1790586919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1762,6 +1767,11 @@ PrefabInstance:
       propertyPath: InitialModule.startSpeed.scalar
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 2877173254917957620, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2877173254917957625, guid: 3e987bf1aec63412aa3947c5fda053aa,
         type: 3}
       propertyPath: m_Name
@@ -1791,6 +1801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696873042663857443, guid: 3e987bf1aec63412aa3947c5fda053aa,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8696873042663857454, guid: 3e987bf1aec63412aa3947c5fda053aa,
         type: 3}
