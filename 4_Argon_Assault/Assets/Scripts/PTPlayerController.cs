@@ -13,7 +13,7 @@ public class PTPlayerController : MonoBehaviour
 
     [Tooltip("In ms^-1")] [SerializeField] float ycontrolSpeed = 20f;
     [Tooltip("In ms^-1")] [SerializeField] float yRangeMin = -12f;
-    [Tooltip("In ms^-1")] [SerializeField] float yRangeMax = 12f;
+    [Tooltip("In ms^-1")] [SerializeField] float yRangeMaxRaw = 12f;
 
     [Tooltip("In ms^-1")] [SerializeField] float zRangeMin = -4;
     [Tooltip("In ms^-1")] [SerializeField] float zRangeMax = 4f;
@@ -24,6 +24,7 @@ public class PTPlayerController : MonoBehaviour
     [SerializeField] float postionPitchFactor = 2f;
     [SerializeField] float positionYawFactor = -1f;
     [SerializeField] float zFactor = 1;
+    [SerializeField] float zYAdjuster = 1;
 
     [Header("Control-throw Based")]
     [SerializeField] float controlPitchFactor = -20f;
@@ -77,11 +78,13 @@ public class PTPlayerController : MonoBehaviour
         float rawYPos = transform.localPosition.y + yOffset;
         float rawZPos = transform.localPosition.z + zOffset;
 
-
         float clampedXPos = Mathf.Clamp(rawXPos, xRangeMin, xRangeMax);
+
+        float zYRangeMaxAdjust = clampedXPos * zYAdjuster;
+        float yRangeMax = zYRangeMaxAdjust + yRangeMaxRaw;
+
         float clampedYPos = Mathf.Clamp(rawYPos, yRangeMin, yRangeMax);
         float clampedZPos = Mathf.Clamp(rawZPos, zRangeMin, zRangeMax);
-
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, clampedZPos);
     }

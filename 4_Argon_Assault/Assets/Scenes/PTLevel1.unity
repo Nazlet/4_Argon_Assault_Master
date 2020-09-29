@@ -402,13 +402,14 @@ MonoBehaviour:
   xRangeMax: 35
   ycontrolSpeed: 20
   yRangeMin: -10
-  yRangeMax: 10
+  yRangeMaxRaw: 12.7
   zRangeMin: 25
   zRangeMax: 41
   guns: []
   postionPitchFactor: 1
   positionYawFactor: 1
   zFactor: 0.3
+  zYAdjuster: 0.16
   controlPitchFactor: -20
   controlRollFactor: -25
 --- !u!1001 &2100854618
