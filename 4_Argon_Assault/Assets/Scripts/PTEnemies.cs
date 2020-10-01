@@ -3,20 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemies : MonoBehaviour
+public class PTEnemies : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 12;
     [SerializeField] int hits = 10;
 
-    ScoreBoard scoreBoard;
+    PT1ScoreBoard scoreBoard;
 
     // Start is called before the first frame update
     void Start()
     {
         AddBoxCollider();
-        scoreBoard = FindObjectOfType<ScoreBoard>();
+        scoreBoard = FindObjectOfType<PT1ScoreBoard>();
     }
 
     private void AddBoxCollider()
