@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 399847752}
   - component: {fileID: 399847754}
   - component: {fileID: 399847753}
+  - component: {fileID: 399847755}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -444,7 +445,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1234
+  m_Text: '1234
+
+'
 --- !u!222 &399847754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -453,6 +456,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399847751}
   m_CullTransparentMesh: 0
+--- !u!114 &399847755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399847751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea8d12f56c1c4ccf8e072e1dd7ec91c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &409338526
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,17 +548,17 @@ PrefabInstance:
     - target: {fileID: 334257476975393045, guid: a91e3c2f01e58474b8c96d566c945ab5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.4
+      value: -122.3
       objectReference: {fileID: 0}
     - target: {fileID: 334257476975393045, guid: a91e3c2f01e58474b8c96d566c945ab5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61.7
+      value: 29.8
       objectReference: {fileID: 0}
     - target: {fileID: 334257476975393045, guid: a91e3c2f01e58474b8c96d566c945ab5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.4
+      value: -13.2
       objectReference: {fileID: 0}
     - target: {fileID: 334257476975393045, guid: a91e3c2f01e58474b8c96d566c945ab5,
         type: 3}
@@ -5740,8 +5755,9 @@ GameObject:
   - component: {fileID: 1486721148}
   - component: {fileID: 1486721150}
   - component: {fileID: 1486721149}
+  - component: {fileID: 1486721151}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5807,6 +5823,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486721147}
   m_CullTransparentMesh: 0
+--- !u!114 &1486721151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486721147}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae37c2d4b01cb4ab09bdcee0446c1f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1810083980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5817,17 +5845,17 @@ PrefabInstance:
     - target: {fileID: 1342925284841760799, guid: 15d7476d777a84742a7aaa692d0a8296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.33
+      value: -109.6
       objectReference: {fileID: 0}
     - target: {fileID: 1342925284841760799, guid: 15d7476d777a84742a7aaa692d0a8296,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.13
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1342925284841760799, guid: 15d7476d777a84742a7aaa692d0a8296,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.03
+      value: 64.7
       objectReference: {fileID: 0}
     - target: {fileID: 1342925284841760799, guid: 15d7476d777a84742a7aaa692d0a8296,
         type: 3}
