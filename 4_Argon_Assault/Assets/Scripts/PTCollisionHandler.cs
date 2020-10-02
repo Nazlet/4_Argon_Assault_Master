@@ -10,6 +10,29 @@ public class PTCollisionHandler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        switch (other.gameObject.tag)
+        {
+            case "Untagged":
+                DeathEvent();
+                break;
+            case "GateBlue":
+                ChargeUp();
+                break;
+            case "GateAmber":
+                AmberDamage();
+                break;
+            case "GateRed":
+                ChargeDown();
+                break;
+            default:
+                break;
+
+        }
+       
+    }
+
+    private void DeathEvent()
+    {
         StartDeathSequence();
         deathFX.SetActive(true);
         Invoke("ReloadScene", levelLoadDelay);
@@ -23,6 +46,21 @@ public class PTCollisionHandler : MonoBehaviour
     private void ReloadScene() // string referenced
     {
         SceneManager.LoadScene(1);
+    }
+
+    private void ChargeUp()
+    {
+        print("chargeup");
+    }
+
+    private void AmberDamage()
+    {
+        print("amberdamage");
+    }
+
+    private void ChargeDown()
+    {
+        print("chargedown");
     }
 
     // Start is called before the first frame update

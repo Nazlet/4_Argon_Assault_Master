@@ -6,6 +6,10 @@ TagManager:
   tags:
   - MusicPlayer
   - Music
+  - Player1
+  - GateBlue
+  - GateAmber
+  - GateRed
   layers:
   - Default
   - TransparentFX
