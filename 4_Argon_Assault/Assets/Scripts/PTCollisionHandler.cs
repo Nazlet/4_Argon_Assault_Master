@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //ok as long as this is the only script that loads scenes
@@ -7,6 +8,18 @@ public class PTCollisionHandler : MonoBehaviour
 {
     [Tooltip("In seconds")] [SerializeField] float levelLoadDelay = 1f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
+
+    [SerializeField] int chargeUpAmount1 = 20;
+    [SerializeField] int amberDamageAmount1 = -10;
+    [SerializeField] int chargeDownAmount1 = -20;
+
+    PT1ScoreBoard pt1scoreBoard;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        pt1scoreBoard = FindObjectOfType<PT1ScoreBoard>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -50,24 +63,20 @@ public class PTCollisionHandler : MonoBehaviour
 
     private void ChargeUp()
     {
-        print("chargeup");
+        pt1scoreBoard.ScoreHit(chargeUpAmount1);
     }
 
     private void AmberDamage()
     {
-        print("amberdamage");
+        pt1scoreBoard.ScoreHit(amberDamageAmount1);
     }
 
     private void ChargeDown()
     {
-        print("chargedown");
+        pt1scoreBoard.ScoreHit(chargeDownAmount1);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
 
     // Update is called once per frame
     void Update()
