@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Gates : MonoBehaviour
+
 {
+    [SerializeField] GameObject deathFX;
+    [SerializeField] Transform parent;
+
     void OnTriggerEnter(Collider other)
     {
-        switch (other.gameObject.tag)
-        {
-            case "Player1":
-                print("Player1");
-                break;
-            case "Player2":
-                print("Player2");
-                break;
-            default:
-                break;
-        }
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
     }
 
     // Start is called before the first frame update
