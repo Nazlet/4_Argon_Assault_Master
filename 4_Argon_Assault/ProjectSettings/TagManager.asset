@@ -10,6 +10,7 @@ TagManager:
   - GateBlue
   - GateAmber
   - GateRed
+  - Player2
   layers:
   - Default
   - TransparentFX
