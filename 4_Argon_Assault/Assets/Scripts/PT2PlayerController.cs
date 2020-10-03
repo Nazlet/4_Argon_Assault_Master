@@ -90,7 +90,7 @@ public class PT2PlayerController : MonoBehaviour
     }
     void ProcessFiring()
     {
-        if (CrossPlatformInputManager.GetButton("P2_fire"))
+        if (CrossPlatformInputManager.GetButton("Fire2"))
         {
             SetGunsActive(true);
         }
