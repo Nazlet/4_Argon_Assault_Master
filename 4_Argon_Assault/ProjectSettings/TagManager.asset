@@ -11,6 +11,7 @@ TagManager:
   - GateAmber
   - GateRed
   - Player2
+  - Friendly
   layers:
   - Default
   - TransparentFX
